@@ -25,7 +25,8 @@ public class Ingresso {
         String fileiraAcento,
         String data,
         String hora,
-        Double preco){
+        Double preco,
+        String qtd){
         
     idIngresso = this.idIngresso;
     nomeFilme = this.nomeFilme;
@@ -33,6 +34,7 @@ public class Ingresso {
     data = this.data;
     hora = this.hora;
     preco = this.preco;
+    qtd = this.qtd;
     }
     //Seguindo com o encpsulamento de dados get e set!!
     
