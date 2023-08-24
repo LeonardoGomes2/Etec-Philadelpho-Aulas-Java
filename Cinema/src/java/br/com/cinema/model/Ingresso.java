@@ -8,7 +8,7 @@ package br.com.cinema.model;
  *
  * @author caroline
  */
-public class Ingresso {
+public class Ingresso{
     private int idIngresso;
     private String nomeFilme;
     private String fileiraAcento;
