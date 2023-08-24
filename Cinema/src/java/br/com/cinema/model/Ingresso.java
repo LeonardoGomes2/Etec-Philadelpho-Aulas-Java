@@ -74,5 +74,11 @@ public class Ingresso {
         public void setPreco(Double preco){
         this.preco = preco;
         }
+        public String getQtd(){
+            return qtd;
+        }
+        public void setQtd(String qtd){
+            this.qtd = qtd;
+        }
     
 }
