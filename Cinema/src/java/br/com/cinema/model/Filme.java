@@ -14,10 +14,17 @@ public class Filme {
     private String sinopse;
     private String duracao;
     private String genero;
+     
     
     public Filme(){//construtor sem parâmetro
 }
-    public Filme(String nomeFilme,String sinopse,String duracao,String genero){
+    public Filme(
+            String nomeFilme,
+            String sinopse,
+            String duracao,
+            String genero)
+    {
+        
         this.nomeFilme=nomeFilme;
         this.sinopse=sinopse;
         this.duracao=duracao;

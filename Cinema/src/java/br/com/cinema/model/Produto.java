@@ -18,17 +18,26 @@ public class Produto {
      private int quantidade;
      private Double preco;//Double ou float é usado para numeros com virgulas.
      private String validade;
+     private String qtd;
      
      
      //Criando os construtores
-    public Produto(){}//construtor ele diz que um produto pode ser criado e nao importa como ele vai ser criado.
+public Produto(){}//construtor ele diz que um produto pode ser criado e nao importa como ele vai ser criado.
     //construtor com o paramentro pode criar um produto mais seguindo as seguintes classes.
-    public Produto(int idProduto,String nomeProduto,int quantidade,Double preco,String validade){
-    idProduto = this.idProduto;
-    nomeProduto = this.nomeProduto;
-    quantidade = this.quantidade;
-    preco = this.preco;
-    validade = this.validade;
+public Produto(
+            int idProduto,
+            String nomeProduto,
+            int quantidade,
+            Double preco,
+            String validade,
+            String qtd)
+    {
+    this.idProduto = idProduto;
+    this.nomeProduto = nomeProduto;
+    this.quantidade = quantidade;
+    this.preco = preco;
+    this.validade = validade;
+   
     }
     //Os metodos get e set usados em consjunto sao chamados de ecapsulamento.!!!
     //Essa ideia tras o ato de encapsular.
@@ -46,7 +55,7 @@ public class Produto {
     public void setIdProduto(int idProduto){
     this.idProduto = idProduto;
     }
-    public String nomeProduto(){
+    public String getnomeProduto(){
     return nomeProduto;
     }
     public void setNomeProduto(String nomeProduto){
@@ -64,12 +73,14 @@ public class Produto {
     public void setPreco(Double preco){
     this.preco = preco;
     }
-    public String Validade(){
+    public String getValidade(){
     return validade;
     }
    public void setValidade(String validade){
        this.validade = validade;
    }
-}
+
+   }
+
 
 

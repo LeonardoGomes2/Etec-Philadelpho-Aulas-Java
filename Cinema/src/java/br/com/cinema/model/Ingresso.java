@@ -8,77 +8,93 @@ package br.com.cinema.model;
  *
  * @author caroline
  */
-public class Ingresso{
+public class Ingresso {
     private int idIngresso;
-    private String nomeFilme;
+    private Filme filme;
     private String fileiraAcento;
     private String data;
     private String hora;
     private Double preco;
-    
-    public Ingresso(){} //construtor sem paramentros 
-    
-    //Logo a baixo eu defino os parametros dos meus construtores para futuros objetos.
-    public Ingresso(
-        int idIngresso,
-        String nomeFilme,
-        String fileiraAcento,
-        String data,
-        String hora,
-        Double preco,
-        String qtd){
-        
-    idIngresso = this.idIngresso;
-    nomeFilme = this.nomeFilme;
-    fileiraAcento = this.fileiraAcento;
-    data = this.data;
-    hora = this.hora;
-    preco = this.preco;
-    qtd = this.qtd;
+    private String qtd;
+//Alt+Inset para incerir altomaticamente os codigos.
+    public Ingresso() {
     }
-    //Seguindo com o encpsulamento de dados get e set!!
+
+    public Ingresso(
+            int idIngresso, 
+            Filme filme, 
+            String fileiraAcento, 
+            String data, 
+            String hora, 
+            Double preco, 
+            String qtd) 
     
-        public int getIdIngresso(){
-        return idIngresso;
-        }
-        public void setIdIngresso(int idIngresso){
+    {
         this.idIngresso = idIngresso;
-        }
-        public String getNomeFilme(){
-        return nomeFilme;
-        }
-        public void setNomeFilme(String nomeFilme){
-        this.nomeFilme = nomeFilme;
-        }
-        public String getFileiraAcento(){
-        return fileiraAcento;
-        }
-        public void setFileiraAcento(String fileiraAcento){
+        this.filme = filme;
         this.fileiraAcento = fileiraAcento;
-        }
-        public String getData(){
-        return data;
-        }
-        public void setData(String data){
         this.data = data;
-        }
-        public String getHora(){
-        return hora;
-        }
-        public void setHora(String hora){
         this.hora = hora;
-        }
-        public Double getPreco(){
-        return preco;
-        }
-        public void setPreco(Double preco){
         this.preco = preco;
-        }
-        public String getQtd(){
-            return qtd;
-        }
-        public void setQtd(String qtd){
-            this.qtd = qtd;
-        }
+        this.qtd = qtd;
+    }
+
+    public int getIdIngresso() {
+        return idIngresso;
+    }
+
+    public void setIdIngresso(int idIngresso) {
+        this.idIngresso = idIngresso;
+    }
+
+    public Filme getFilme() {
+        return filme;
+    }
+
+    public void setFilme(Filme filme) {
+        this.filme = filme;
+    }
+
+    public String getFileiraAcento() {
+        return fileiraAcento;
+    }
+
+    public void setFileiraAcento(String fileiraAcento) {
+        this.fileiraAcento = fileiraAcento;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
+    public String getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(String qtd) {
+        this.qtd = qtd;
+    }
     
 }
+    
+   
